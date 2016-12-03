@@ -8,8 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/bin/www",
-            "cwd": "${workspaceRoot}"
+            "program": "${workspaceRoot}/bin/www.js",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "tsc",
+            "sourceMaps": true
         },
         {
             "type": "node",
