@@ -3,13 +3,14 @@
 
 <head>
   <title><%= title %></title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/styles.css">
-
+  
   <!-- Polyfill(s) for older browsers -->
   <script src="/node_modules/core-js/client/shim.min.js"></script>
-
   <script src="/node_modules/zone.js/dist/zone.js"></script>
   <script src="/node_modules/reflect-metadata/Reflect.js"></script>
   <script src="/node_modules/systemjs/dist/system.src.js"></script>
@@ -21,7 +22,11 @@
 </head>
 
 <body>
-  <my-app><%= title %> is loading ...</my-app>
+    <my-app></my-app>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
